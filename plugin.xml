@@ -4,7 +4,7 @@
   <description>\
 Simple integration of Zing Charts into your Grails web application.
 </description>
-  <documentation>http://github.com/cavneb/Zing-Chart</documentation>
+  <documentation>https://github.com/cavneb/zing-charts</documentation>
   <resources>
     <resource>zingchart.ZingChartExamplesController</resource>
     <resource>zingchart.ZingChartTagLib</resource>

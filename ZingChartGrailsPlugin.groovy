@@ -19,7 +19,7 @@ Simple integration of Zing Charts into your Grails web application.
 '''
 
     // URL to the plugin's documentation
-    def documentation = "http://github.com/cavneb/Zing-Chart"
+    def documentation = "https://github.com/cavneb/zing-charts"
 
     def doWithWebDescriptor = { xml ->
         // TODO Implement additions to web.xml (optional), this event occurs before 
