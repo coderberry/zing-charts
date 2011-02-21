@@ -1,0 +1,156 @@
+{
+   "graphset":[
+      {
+         "type":"bar",
+         "background-color":"#252525",
+         "border-color":"#ccc",
+         "border-width":8,
+         "title":{
+            "margin":"10 0 0 20",
+            "text":"Twitter Desktop App Market Share",
+            "background-color":-1,
+            "font-size":23,
+            "font-color":"#ffffff",
+            "text-align":"left"
+         },
+         "chart":{
+            "margin":"60 20 80 40",
+            "border-width":0
+         },
+         "legend":{
+            "position":"75% 100%",
+            "margin-bottom":15,
+            "layout":"horizontal",
+            "width":220,
+            "border-width":0,
+            "background-color":-1,
+            "shadow":false,
+            "item":{
+               "font-color":"#ffffff",
+               "border-width":0,
+               "bold":true
+            }
+         },
+         "tooltip":{
+            "bold":true,
+            "border-radius":10,
+            "margin":"10 10 10 10"
+         },
+         "scale-x":{
+            "values":[
+               "Sep 08",
+               "Oct 08",
+               "Nov 08",
+               "Dec 08",
+               "Jan 09",
+               "Feb 09",
+               "Mar 09",
+               "Apr 09",
+               "May 09",
+               "Jun 09",
+               "Jul 09",
+               "Aug 09",
+               "Sep 09",
+               "Oct 09",
+               "Nov 09",
+               "Dec 09"
+            ],
+            "font-size":"11px",
+            "offset-start":5,
+            "offset-end":5,
+            "line-width":0,
+            "tick":{
+               "line-width":0
+            },
+            "max-labels":20,
+            "item":{
+               "font-angle":315,
+               "offset-y":25,
+               "font-color":"#ffffff"
+            },
+            "guide":{
+               "line-width":0
+            }
+         },
+         "scale-y":{
+            "line-width":0,
+            "decimals":1,
+            "thousands-separator":".",
+            "guide":{
+               "line-width":1,
+               "line-color":"#eeeeee",
+               "line-gap-size":0
+            },
+            "tick":{
+               "line-width":0
+            },
+            "item":{
+               "font-color":"#ffffff",
+               "bold":true
+            }
+         },
+         "plot":{
+            "tooltip-text":"%v %",
+            "margin-left":3,
+            "margin-right":3
+         },
+         "labels":[
+            {
+               "text":"Apps and data are fictional and for visualization purposes only",
+               "font-color":"#999999",
+               "font-size":"9",
+               "x":"10",
+               "y":"337"
+            }
+         ],
+         "series":[
+            {
+               "values":[
+                  2.3,
+                  2.8,
+                  3.2,
+                  3.5,
+                  3.7,
+                  3.3,
+                  3.1,
+                  3.5,
+                  3.6,
+                  3.2,
+                  4.3,
+                  4.3,
+                  4.4,
+                  4.2,
+                  4.3,
+                  4.6
+               ],
+               "text":"TwitterMania",
+               "background-color":"#3F7098",
+               "line-color":"#3F7098"
+            },
+            {
+               "values":[
+                  1.3,
+                  1.2,
+                  1.5,
+                  1.4,
+                  1.6,
+                  1.8,
+                  1.7,
+                  1.8,
+                  2.5,
+                  2.6,
+                  2.7,
+                  2.7,
+                  3.2,
+                  3.6,
+                  3.9,
+                  4.6
+               ],
+               "text":"TweetPerfect",
+               "background-color":"#849F42",
+               "line-color":"#849F42"
+            }
+         ]
+      }
+   ]
+}

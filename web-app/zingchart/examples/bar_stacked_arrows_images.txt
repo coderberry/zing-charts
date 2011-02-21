@@ -1,0 +1,186 @@
+{
+   "graphset":[
+      {
+         "type":"bar",
+         "stacked":true,
+         "background-color":"#ECF4FC #C5DBED",
+         "fill-angle":0,
+         "images":[
+            {
+               "src":"images/bar_stacked_arrows_images.png",
+               "x":50,
+               "y":10
+            }
+         ],
+         "title":{
+            "text":"Widget Sales 2009",
+            "background-color":-1,
+            "font-size":23,
+            "font-color":"#003366",
+            "text-align":"left",
+            "width":400,
+            "x":130,
+            "y":20
+         },
+         "chart":{
+            "margin":"80 95 50 60",
+            "border-width":0
+         },
+         "legend":{
+            "position":"110% 50%",
+            "width":120,
+            "border-width":0,
+            "background-color":-1,
+            "shadow":false,
+            "bold":1
+         },
+         "tooltip":{
+            "bold":true,
+            "border-radius":10,
+            "margin":"10 10 10 10"
+         },
+         "scale-x":{
+            "values":[
+               "Dec 08",
+               "Jan 09",
+               "Feb 09",
+               "Mar 09",
+               "Apr 09",
+               "May 09",
+               "Jun 09",
+               "Jul 09",
+               "Aug 09",
+               "Sep 09",
+               "Oct 09",
+               "Nov 09",
+               "Dec 09"
+            ],
+            "font-size":"11px",
+            "offset-start":10,
+            "offset-end":10,
+            "line-width":0,
+            "tick":{
+               "line-width":0
+            },
+            "max-labels":20,
+            "item":{
+               "font-angle":315,
+               "offset-y":25,
+               "font-color":"#003366"
+            },
+            "guide":{
+               "line-width":0
+            }
+         },
+         "scale-y":{
+            "line-width":0,
+            "format":"$%v",
+            "thousands-separator":",",
+            "guide":{
+               "line-width":0,
+               "line-style":"solid"
+            },
+            "tick":{
+               "line-width":0
+            },
+            "item":{
+               "font-color":"#336699",
+               "bold":true
+            }
+         },
+         "plot":{
+            "shadow":true,
+            "shadow-angle":0,
+            "shadow-blur-x":4,
+            "tooltip-text":"$%v",
+            "margin-left":4,
+            "margin-right":4
+         },
+         "labels":[
+            {
+               "text":"Featured in<br/>Major Mag",
+               "font-color":"#990000",
+               "font-size":"12",
+               "bold":true,
+               "border-width":0,
+               "hook":"node:plot=1,index=5,offset-x=-70,offset-y=28"
+            },
+            {
+               "text":"Trade<br/>Show",
+               "font-color":"#990000",
+               "font-size":"12",
+               "bold":true,
+               "border-width":0,
+               "hook":"node:plot=1,index=8,offset-x=60,offset-y=5"
+            },
+            {
+               "text":"X-mas Ad<br/>Campaign",
+               "font-color":"#990000",
+               "font-size":"12",
+               "bold":true,
+               "border-width":0,
+               "hook":"node:plot=1,index=12,offset-x=5,offset-y=-40"
+            }
+         ],
+         "arrows":[
+            {
+               "background-color":"#990000",
+               "from":"node:plot=1,index=5,offset-x=-30,offset-y=30",
+               "to":"node:plot=1,index=5,offset-x=-10,offset-y=30"
+            },
+            {
+               "background-color":"#990000",
+               "from":"node:plot=1,index=8,offset-x=40,offset-y=5",
+               "to":"node:plot=1,index=8,offset-x=15,offset-y=5"
+            },
+            {
+               "background-color":"#990000",
+               "from":"node:plot=1,index=12,offset-x=0,offset-y=-25",
+               "to":"node:plot=1,index=12,offset-x=0,offset-y=-5"
+            }
+         ],
+         "series":[
+            {
+               "values":[
+                  10300,
+                  20300,
+                  16000,
+                  15800,
+                  18000,
+                  28000,
+                  19000,
+                  20000,
+                  27000,
+                  13500,
+                  11200,
+                  8800,
+                  19400
+               ],
+               "text":"Sales",
+               "background-color":"#016399 #0282C6",
+               "line-color":"#016399"
+            },
+            {
+               "values":[
+                  4800,
+                  9000,
+                  7000,
+                  6300,
+                  5800,
+                  12000,
+                  5400,
+                  5700,
+                  9600,
+                  4500,
+                  3900,
+                  2600,
+                  8000
+               ],
+               "text":"Profit",
+               "background-color":"#87CAF9 #B6E4FE",
+               "line-color":"#68B9EF"
+            }
+         ]
+      }
+   ]
+}

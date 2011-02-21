@@ -1,0 +1,227 @@
+{
+   "graphset":[
+      {
+         "type":"area",
+         "margin":"10 10 10 10",
+         "background-color":"#FFFFFF",
+         "border-width":1,
+         "border-color":"#404040",
+         "alpha":0.5,
+         "chart":{
+            "margin":"60 40 80 60",
+            "border-width":0
+         },
+         "title":{
+            "background-color":-1,
+            "text":"Virtucon Expenditures (millions of dollars)",
+            "font-color":"black",
+            "font-size":"20px",
+            "bold":true,
+            "margin-top":"10px"
+         },
+         "plot":{
+            "highlight":false,
+            "marker":{
+               "type":"none"
+            },
+            "alpha-area":1,
+            "line-width":0
+         },
+         "scale-x":{
+            "line-color":"gray",
+            "line-width":"1px",
+            "item":{
+               "color":"#404040",
+               "offset-y":"10px"
+            },
+            "tick":{
+               "line-width":"1px",
+               "size":"4px"
+            },
+            "guide":{
+               "line-width":0
+            },
+            "values":[
+               "Dec '06",
+               "",
+               "Jun. '07",
+               "",
+               "Dec '07",
+               "",
+               "Jun. '08",
+               "",
+               "Dec '08",
+               "",
+               "Jun. '09",
+               "",
+               "Dec '09"
+            ]
+         },
+         "scale-y":{
+            "format":"$%v",
+            "values":"0:16:2",
+            "line-color":"gray",
+            "line-width":"1px",
+            "alpha":0.5,
+            "guide":{
+               "line-color":"gray",
+               "line-width":"1px",
+               "alpha":0.5,
+               "line-style":"dashed",
+               "line-gap-size":5
+            },
+            "tick":{
+               "size":"4px",
+               "line-width":"1px",
+               "line-color":"gray",
+               "alpha":0.5
+            },
+            "item":{
+               "color":"#404040",
+               "offset-x":"-5px"
+            }
+         },
+         "labels":[
+            {
+               "text":"Source: Number 2, CEO Virtucon",
+               "color":"black",
+               "font-size":"10px",
+               "x":"65",
+               "y":"470"
+            },
+            {
+               "text":"Alan Parsons<br/>Project",
+               "color":"white",
+               "font-size":"12",
+               "bold":true,
+               "hook":"node:plot=0,index=12,offset-x=-75,offset-y=148"
+            },
+            {
+               "text":"Moon Base Design",
+               "color":"white",
+               "font-size":"12",
+               "bold":true,
+               "hook":"node:plot=1,index=10,offset-x=-12,offset-y=20"
+            },
+            {
+               "text":"Volcanic Lair Construction",
+               "color":"white",
+               "font-size":"12",
+               "bold":true,
+               "hook":"node:plot=2,index=8,offset-x=65,offset-y=30"
+            },
+            {
+               "text":"Sharks with Laser Beams",
+               "color":"white",
+               "font-size":"12",
+               "bold":true,
+               "hook":"node:plot=3,index=6,offset-x=125,offset-y=20"
+            },
+            {
+               "text":"Miniature Cloning",
+               "color":"white",
+               "font-size":"12",
+               "bold":true,
+               "hook":"node:plot=4,index=2,offset-x=305,offset-y=12"
+            }
+         ],
+         "series":[
+            {
+               "values":[
+                  8,
+                  7.6,
+                  8.8,
+                  9.4,
+                  10.4,
+                  9,
+                  9.8,
+                  11.8,
+                  11.9,
+                  10,
+                  9.8,
+                  12,
+                  15.8
+               ],
+               "text":"Alan Parsons Project",
+               "background-color":"#008000"
+            },
+            {
+               "values":[
+                  7,
+                  5.6,
+                  5.7,
+                  6.1,
+                  9.7,
+                  7.6,
+                  7.6,
+                  7.6,
+                  9,
+                  7.5,
+                  7.5,
+                  8,
+                  10.1
+               ],
+               "text":"Moon Base Design",
+               "background-color":"#FFA621"
+            },
+            {
+               "values":[
+                  4.7,
+                  3,
+                  2.9,
+                  3,
+                  5.8,
+                  5.8,
+                  4.6,
+                  4.5,
+                  5.5,
+                  5.2,
+                  5.1,
+                  5.5,
+                  5.2
+               ],
+               "text":"Volcanic Lair Construction",
+               "background-color":"#FF6600"
+            },
+            {
+               "values":[
+                  2.6,
+                  1.65,
+                  1.6,
+                  1.6,
+                  2,
+                  3.08,
+                  3.05,
+                  3.07,
+                  3.1,
+                  3.15,
+                  3.05,
+                  3.1,
+                  3.2
+               ],
+               "text":"Sharks with Frickin' Laser Beams",
+               "background-color":"#FF0000"
+            },
+            {
+               "values":[
+                  1.3,
+                  1.3,
+                  1.28,
+                  1.31,
+                  0.3,
+                  0.31,
+                  0.31,
+                  1,
+                  1.3,
+                  1.27,
+                  1.26,
+                  1.28,
+                  1.3
+               ],
+               "text":"Miniature Cloning",
+               "background-color":"#2D63FF"
+            }
+         ]
+      }
+   ]
+}

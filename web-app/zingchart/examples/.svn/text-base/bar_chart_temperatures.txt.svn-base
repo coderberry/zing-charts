@@ -1,0 +1,162 @@
+{
+"graphset":[
+    {
+        "type":"bar",
+		"background-image": "images/base_with_y_axis.png",
+        "title":{
+            "text":"AVERAGE HIGH &amp; LOW TEMPERATURES IN PHOENIX, ARIZONA",
+            "background-color":-1,
+			"font-family": "calibri",
+			"font-size": 14,
+			"bold": true,
+			"text-align": "left",
+			"font-color": "#fff",
+			"margin": "20 22 0 88"
+        },
+        "chart":{
+			"margin":"107 20 72 58",
+			"background-color": -1,
+			"border-width": 0,
+			"fill-type": "linear"
+        },
+        "scale-x":{
+            "line-color":-1,
+			"line-width": 0,
+            "font-color":"#fff",
+            "item":{
+                "font-color":"#fff",
+				"font-size": 14,
+				"bold": false,
+				"offset-y": 6,
+				"font-family": "calibri"
+            },
+			"tick":
+				{
+				"visible": false,
+				"size": 4, 
+				"line-width": 3,
+				"line-color": "#000",
+				"placement": "outer"
+				},
+            "guide":{
+                "line-color":-1,
+				"line-width": 0
+            },
+            "values":["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"]
+        },
+        "scale-y":{
+            "values": "0:110:1",
+			"visible": false,
+			"max-labels": 12,
+			"line-color":"#000",
+			"line-width": 0,
+            "item":{
+                "font-color":"#fff",
+				"bold": true
+            },
+            "guide":{
+                "visible": true,
+				"line-color":"-1",
+				"alpha": 0,
+				"line-style": "none"
+            },
+			"tick":
+				{
+				"visible": false,
+				"size": 4, 
+				"line-width": 3,
+				"line-color": "#000",
+				"placement": "outer"
+				}
+        },
+		"labels": 
+			[
+			{
+			"text": "data source: http://phoenix.about.com/od/weather/a/averagetemps.htm",
+			"font-size": 9,
+			"font-color": "#666",
+			"x": 5,
+			"y": 383
+			},
+			{
+			"text": " ",
+			"font-color": "#fff",
+			"background-color": "#fff #999",
+			"alpha": 0.6,
+			"border-radius": 15,
+			"width": 92,
+			"height": 37,
+			"x": 405,
+			"y": 360
+			}
+			],	
+		"progress": 
+			{
+			"position": "50% 50%",
+			"width": 240,
+			"font-color": "#ff0000",
+			"font-family": "tahoma",
+			"bold": true,
+			"height": 18,
+			"background-color": "#eaf0f2",
+			"background-color-3": "#00b0e2",
+			"border-width" : 1,
+			"border-color" : "#3e6c7b"			
+			},				
+        "plot":{
+            "tooltip-text":" %v&deg;",
+            "aspect":"brightness",
+			"alpha": 0.8,
+            "animate":1,
+			"margin-left": 5,
+            "effect":1
+        },
+		"tooltip": 
+			{
+			"margin": "30 30",
+			"font-color": "#000",
+			"bold": true,
+			"shadow": false,
+			"bevel": false,
+			"background-transparent": true,
+			"background-repeat": false,
+			"rules" : [
+					{
+						"rule" : "%v < 50",
+						"background-image" : "images/tooltip_cloud.png"
+					},
+					{
+						"rule" :"%v >= 50 && %v < 70",
+						"background-image" : "images/tooltip_sun.png"
+					},
+					{
+						"rule" :"%v >= 70 && %v < 95",
+						"background-image" : "images/tooltip_fireball.png"
+					},	
+					{
+						"rule" : "%v >= 95",
+						"background-image" : "images/tooltip_devil.png"
+					}
+					]
+			},
+        "series":[
+            {
+                "values":[66,70,75,84,93,103,105,103,99,88,75,66],
+                "text":"average high temperature",
+					"alpha": 1,
+					"-background-color": 0,
+					"border-color": "#000",
+					"border-width": 0,
+					"background-color" : "#fd2200 #fdc002"
+            },
+			{
+                "values":[41,44,49,55,64,72,80,79,72,61,48,42],
+                "text":"average low temperature",
+					"alpha": 1,
+					"border-color": "#000",
+					"border-width": 0,
+					"background-color" : "#09a8f7 #a8d258"
+            }		
+			]
+        }]
+    }

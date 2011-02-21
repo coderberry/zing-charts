@@ -1,0 +1,144 @@
+{
+   "graphset":[
+      {
+         "type":"bar",
+         "alpha":0.8,
+         "background-image":"images/bar_creative_images_bg.png",
+         "legend":{
+            "layout":"horizontal",
+            "width":425,
+            "border-width":0,
+            "alpha":0.5,
+            "background-color":-1,
+            "shadow":false,
+            "margin":"80px 5px 0px 50px",
+            "item":{
+               "font-color":"#3b6b8e",
+               "border-width":0,
+			   "size": 6,
+               "background-transparent":"true",
+               "width":"25px",
+               "height":"25px",
+               "bold":true
+            }
+         },
+         "chart":{
+            "margin":"80,55,55,55",
+            "border-color":"#173D36",
+            "alpha":"0",
+            "background-color":"#4b6467 #2a3f42",
+            "border-width":0
+         },
+         "scale-x":{
+            "values":"2007:2008:1",
+            "max-labels":10,
+            "zooming":true,
+            "line-color":"#8a8a8a",
+            "line-width":2,
+            "item":{
+               "font-color":"#3b6b8e"
+            },
+            "tick":{
+               "line-color":"#ececd4",
+               "line-width":1
+            },
+            "minor-tick":{
+               "line-color":"#ececd4",
+               "line-width":1
+            },
+            "guide":{
+               "line-width":0,
+               "line-color":"#ececd4"
+            }
+         },
+         "scale-y":{
+            "ref-line":{
+               "visible":false
+            },
+            "zooming":false,
+            "line-color":"#8a8a8a",
+            "line-width":2,
+            "tick":{
+               "line-color":"#ececd4",
+               "line-width":1
+            },
+            "minor-tick":{
+               "line-color":"#ececd4",
+               "line-width":1
+            },
+            "item":{
+               "font-color":"#3b6b8e"
+            },
+            "guide":{
+               "line-width":1,
+               "line-gap-size":0,
+               "line-color":"#ececd4"
+            }
+         },
+         "scroll-x":{
+
+         },
+         "background-color":"#394142 #1a2021",
+         "border-color":"#3b5d62",
+         "border-width":0,
+		 "tooltip": 
+					{
+					"visible": true
+					},
+         "plot":{
+            "marker":{
+               "size":0,
+               "border-width":0,
+               "shadow":false
+            },
+            "animate":1,
+            "effect":1,
+            "alphaarea":1,
+            "preview":true,
+            "border-width":0,
+            "spline":false,
+			"background-transparent": true
+         },
+         "labels":[
+            {
+               "text":"Data is fictional and for demonstration purposes only",
+               "font-color":"#8a8a8a",
+               "font-size":"9",
+               "x":"52",
+               "y":"375"
+            }
+         ],
+         "series":[
+            {
+               "values":[
+                  120.6,
+                  116.6
+               ],           
+			   "text":"ELECTRIC BLUE",
+			   "background-image":"images/bar_creative_images_bar1.png",
+			   "background-color":"#39a8d8"
+            },
+            {
+               "values":[
+                  171.4,
+                  163.2
+               ],
+               "text":"MELLOW YELLOW",
+               "background-image":"images/bar_creative_images_bar2.png",
+			   "background-color":"#dabc29"
+               
+
+            },
+            {
+               "values":[
+                  215.8,
+                  208.6
+               ],
+               "text":"PUNK PINK",
+			   "background-image":"images/bar_creative_images_bar3.png",
+               "background-color":"#f54139"
+            }
+         ]
+      }
+   ]
+}

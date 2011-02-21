@@ -1,0 +1,113 @@
+{
+   "graphset":[
+      {
+         "type":"gauge",
+         "title":{
+            "text":"March Sales to Date",
+            "font-family":"helvetica",
+            "background-color":"#333",
+            "width":200
+         },
+         "border-color":"#333",
+         "border-width":10,
+         "chart":{
+            "margin":"50 70 30 20"
+         },
+         "background-color":"#333 #666",
+         "fill-type":"radial",
+         "scale":{
+            "values":[
+               " Robert ",
+               " Jennifer ",
+               " Jeremy ",
+               " Marybeth "
+            ],
+            "margin":"10 20 10 20",
+            "item":{
+               "font-color":"#FFFFFF",
+               "font-family":"helvetica",
+               "text-align":"center",
+               "font-size":14,
+               "bold":true,
+               "background-color":"-1",
+               "border-color":"-1",
+               "offset-y":-10,
+               "offset-x":25
+            }
+         },
+         "scale-r":{
+            "values":"0:180:20",
+            "aperture":270,
+            "ref-angle":270,
+            "background-gcolor":"#ffffff,#999999",
+            "border-color":"#fff",
+            "border-width":"3",
+            "guide":{
+               "background-color":"0xffffff,0xffffff",
+               "alpha":0.8,
+               "offset-r":-10,
+               "rules":[
+                  {
+                     "rule":"%v < 60",
+                     "background-color":"0xff0000,0xff0000"
+                  },
+                  {
+                     "rule":"%v >=60 && %v < 120",
+                     "background-color":"0xffff00,0xffff00"
+                  },
+                  {
+                     "rule":"%v >=120",
+                     "background-color":"0x00ff00,0x00ff00"
+                  }
+               ]
+            },
+            "item":{
+               "offset-r":10,
+               "font-color":"#ffffff",
+               "font-size":12,
+               "font-family":"helvetica",
+               "text-align":"center",
+               "bold":true
+            },
+            "tick":{
+               "size":4,
+               "line-color":"0x0000ff",
+               "line-width":2
+            },
+            "center":{
+               "size":10,
+               "background-color":"0xffffff,0x333333",
+               "border-color":"#fff",
+               "border-width":"1",
+               "fill-type":"radial",
+               "fill-offset-x":-2,
+               "fill-offset-y":-2
+            },
+            "ring":{
+               "size":10,
+               "alpha":0.8,
+               "offset-r":0,
+               "background-color":"0xeeeeee,0xbbbbbb"
+            }
+         },
+         "plot":{
+            "csize":"15",
+            "background-color":"#0033cc",
+            "fill-type":"radial",
+            "border-color":"#0033cc",
+            "border-width":1
+         },
+         "series":[
+            {
+               "values":[
+                  88,
+                  120,
+                  142,
+                  167
+               ],
+               "text":"Sales"
+            }
+         ]
+      }
+   ]
+}
