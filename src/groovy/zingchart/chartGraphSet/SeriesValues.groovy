@@ -6,6 +6,5 @@ class SeriesValues {
     Boolean animate
     Float animateSpeed = 1.0
     Integer effect
-    ArrayList<Float> values 
-
+    List<Float> values 
 }

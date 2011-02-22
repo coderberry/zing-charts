@@ -9,20 +9,16 @@ class ChartGraphSet {
     def series
     ScaleX scaleX
     ScaleY scaleY
-    ArrayList legend = []
+    List legend = []
 
-    def ChartGraphSet() {
-        throw new Exception("Can only instanciate object with a chart type as the parameter")
-    }
-
-    def ChartGraphSet(String type) {
+    ChartGraphSet(String type) {
         this.type = type
         this.series = new Series()
         this.scaleX = new ScaleX()
         this.scaleY = new ScaleY()
     }
 
-    def String toJSON() {
+    String toJSON() {
         def jsonMap = [:]
         jsonMap.graphset = []
         def graphSetData = [:]

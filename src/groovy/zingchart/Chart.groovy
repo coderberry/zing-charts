@@ -12,11 +12,11 @@ class Chart implements ChartDefinition {
     Float animateSpeed
     Integer effect
 
-    def Chart(String chartType) {
+    Chart(String chartType) {
         this.chartGraphSet = new ChartGraphSet(chartType)
     }
 
-    def Chart(String chartType, String libURL, Integer width, Integer height, String containerName, Float animateSpeed, Integer effect) {
+    Chart(String chartType, String libURL, Integer width, Integer height, String containerName, Float animateSpeed, Integer effect) {
         this.libURL = libURL
         this.width = width
         this.height = height
@@ -26,7 +26,7 @@ class Chart implements ChartDefinition {
         this.effect = effect
     }
 
-    def void addDataSet(ArrayList data, String title) {
+    void addDataSet(List data, String title) {
         SeriesValues seriesValues = new SeriesValues()
         if (title) {
             seriesValues.title = title
@@ -41,23 +41,23 @@ class Chart implements ChartDefinition {
         this.chartGraphSet.series.seriesValues << seriesValues
     }
 
-    def void setHorizontalLabels(ArrayList<String> labels) {
+    void setHorizontalLabels(List<String> labels) {
         this.chartGraphSet.scaleX.labels = labels
     }
 
-    def void setVerticalLabels(ArrayList<String> labels) {
+    void setVerticalLabels(ArrayList<String> labels) {
         this.chartGraphSet.scaleY.labels = labels
     }
 
-    def String toHTML() {
-        def ret = '<script type="text/javascript">'
-        ret += "var ${containerName}JsonConfig = '${this.chartGraphSet.toJSON()}'; "
-        ret += "\$(function() { zingchart.render({ liburl: '${this.libURL}', "
-        ret += "data: ${containerName}JsonConfig, width: ${this.width}, output: 'canvas', "
-        ret += "height: ${this.height}, container: '${this.containerName}' }) })"
-        ret += "</script>"
-        ret += "<div id=\"${this.containerName}\"></div>"
-        return ret
+    String toHTML() {
+        """\
+<script type="text/javascript">
+var ${containerName}JsonConfig = '${this.chartGraphSet.toJSON()}';
+\$(function() { zingchart.render({ liburl: '${this.libURL}',
+data: ${containerName}JsonConfig, width: ${this.width}, output: 'canvas',
+height: ${this.height}, container: '${this.containerName}' }) })
+</script>
+<div id="${this.containerName}"></div>
+"""
     }
-
 }
