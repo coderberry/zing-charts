@@ -5,14 +5,14 @@ class ZingChartTagLib {
     static namespace = 'zing'
     
 		def include = { attrs ->
-		    def jsPath = "${resource(dir:'zingchart', file:'zingchart-1.1.min.js')}"
-		    def ret = "<script type=\"text/javascript\" src=\"${jsPath}\"></script>"
-		    out << ret
+		    out << """${javascript(src:"jquery-1.4.2.min.js", plugin:'zing-chart')}"""
+		    String jsPath = "${resource(dir:'zingchart', file:'zingchart-1.1.min.js', plugin: 'zing-chart')}"
+		    out << """<script type="text/javascript" src="${jsPath}"></script>"""
 		}
     
 		def chart = { attrs ->
 		    def type = attrs.type
-		    def libURL = "${resource(dir:'zingchart', file:'zingchart.swf')}"
+		    def libURL = "${resource(dir:'zingchart', file:'zingchart.swf', plugin:'zing-chart')}"
 		    def width = attrs.width ? attrs.width.toInteger() : 300
 		    def height = attrs.height ? attrs.height.toInteger() : 200
 		    def container = attrs.container ?: 'myChart'
